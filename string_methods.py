@@ -16,3 +16,20 @@ for i in range(10):
 for i in range(4):
     print("|||".center(50))
 
+#find, finds the position of substring
+s = "i see a cat, the cat os black. cats are nice"
+print(s.find("cat"))
+print(s.find("dog"))
+pos = 0
+while True:
+    pos = s.find("cat", pos)
+    if pos == -1:
+        break
+    print(f"cat on position {pos}")
+    pos+= 1
+
+print(s.count("cat"))
+print(s.replace("cat", "dog"))
+print(s.split())
+
+
